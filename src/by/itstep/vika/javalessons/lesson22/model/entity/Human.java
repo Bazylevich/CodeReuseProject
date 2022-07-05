@@ -6,6 +6,7 @@ public class Human {
     protected boolean alive;
 
     public Human() {
+        System.out.println("Human full constractor");
     }
 
     public Human(String name, int age, boolean alive) {
