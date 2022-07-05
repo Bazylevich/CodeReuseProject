@@ -1,21 +1,22 @@
 package by.itstep.vika.javalessons.lesson22.model.entity;
 
-public class Loafer {
+public class Loafer extends Human {
     private static double amount;
 
-    private String name;
-    private int age;
     private double inactivityPeriod;
-    private boolean alive;
+
 
     public Loafer() {
     }
 
     public Loafer(String name, int age, double inactivityPeriod, boolean alive) {
-        this.name = name;
-        this.age = age;
+        setName(name);
+        setAge(age);
+        setAlive(alive);
+        //        this.name = name;
+//        this.age = age;
         this.inactivityPeriod = inactivityPeriod;
-        this.alive = alive;
+//        this.alive = alive;
     }
 
     public static double getAmount() {
@@ -26,22 +27,6 @@ public class Loafer {
         Loafer.amount = amount;
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public int getAge() {
-        return age;
-    }
-
-    public void setAge(int age) {
-        this.age = age;
-    }
-
     public double getInactivityPeriod() {
         return inactivityPeriod;
     }
@@ -50,16 +35,9 @@ public class Loafer {
         this.inactivityPeriod = inactivityPeriod;
     }
 
-    public boolean isAlive() {
-        return alive;
-    }
-
-    public void setAlive(boolean alive) {
-        this.alive = alive;
-    }
-
     public String getInfo() {
-        return "Loafer - " + name + ": age = " + age
+        return "Loafer - " + getName() + ": age = " + getAge()
                 + ", inactivity period = " + inactivityPeriod
-                + ", is alive = " + (alive ? "yes" : "no");
+                + ", is alive = " + (isAlive() ? "yes" : "no");
     }
+}

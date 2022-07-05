@@ -1,11 +1,7 @@
 package by.itstep.vika.javalessons.lesson22.model.entity;
 
-public class Worker {
-    private String name;
-    private int age;
+public class Worker extends Human{
     private double salary;
-    private boolean alive;
-
 
     public double getSalary() {
         return salary;
@@ -16,12 +12,15 @@ public class Worker {
     }
 
     public Worker(String name, int age, double salary, boolean alive) {
-        this.name = name;
-        this.age = age;
+       setAge(age);
+       setName(name);
+       setAlive(alive);
+        // this.name = name;
+       // this.age = age;
         this.salary = salary;
-        this.alive = alive;
+       // this.alive = alive;
     }
     public String getInfo(){
-        return "Worker - " + name + ": age = " + age + ", salary" + salary + ", is alive = " + (alive ? "yes" :"no");
+        return "Worker - " + getName() + ": age = " + getAge() + ", salary" + salary + ", is alive = " + (isAlive() ? "yes" :"no");
     }
 }
