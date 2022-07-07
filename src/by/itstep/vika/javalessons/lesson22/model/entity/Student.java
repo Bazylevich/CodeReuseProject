@@ -34,6 +34,11 @@ public class Student extends Human {
 //        this.alive = alive;
     }
 
+    public Student(String name, int age, MarkNote note, boolean alive) {
+        super(name, age, alive);
+        this.note = note;
+    }
+
     // copy-constructor
     public Student(Student student) {
         super();
