@@ -37,6 +37,6 @@ public class Loafer extends Human {
     }
 
     public String getInfo() {
-        return "Loafer - " + super.getInfo() + ", inactivity period = " + inactivityPeriod;
+        return "Loafer - " + super.toString() + ", inactivity period = " + inactivityPeriod;
     }
 }

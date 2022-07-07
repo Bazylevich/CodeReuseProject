@@ -22,6 +22,6 @@ public class Worker extends Human{
 //        this.alive = alive;
     }
     public String getInfo(){
-        return "Worker - " + super.getInfo() + ", salary" + salary;
+        return "Worker - " + super.toString() + ", salary = " + salary;
     }
 }

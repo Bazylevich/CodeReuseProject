@@ -1,6 +1,6 @@
 package by.itstep.vika.javalessons.lesson22.model.entity;
 
-public class Human {
+public class Human extends Object {
     protected String name;
     protected int age;
     protected boolean alive;
@@ -39,7 +39,7 @@ public class Human {
         this.alive = alive;
     }
 
-    public String getInfo(){
+    public String toString(){
         return name + ": age = " + age
                 + ", is alive = " + (alive ? "yes" : "no");
     }

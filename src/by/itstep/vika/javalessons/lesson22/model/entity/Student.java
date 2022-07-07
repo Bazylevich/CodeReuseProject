@@ -64,7 +64,7 @@ public class Student extends Human {
     }
 
     public String getInfo() {
-        return "Student - " + super.getInfo()
+        return "Student - " + super.toString()
                 + ", mark = " + note.getMark();
 
 //        return "Student - " + getName() + ": age = " + getAge()
